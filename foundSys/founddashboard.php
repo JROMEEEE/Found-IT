@@ -9,6 +9,13 @@
 <body>
     <h1 class="text-center mt-5">Found Items</h1>
 
-    <a href="../index.php" class="btn btn-primary">Go Back</a>
+    <div class="container mt-5">
+        
+    <a href="foundform.php" class="btn btn-primary">Submit Found Item</a>
+
+    </div>
+
+
+    <a href="../index.php" class="btn btn-primary mt-5">Go Back</a>
 </body>
 </html>
