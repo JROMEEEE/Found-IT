@@ -11,7 +11,7 @@
 
         <h1 class="text-center mt-5">Submit a found item</h1>
 
-        <form action="foundprocess.php" method="post">
+        <form action="foundprocess.php" method="post" enctype="multipart/form-data">
 
             <div class="form-group">
                 <label for="fnd_category">Item Category:</label>
@@ -44,13 +44,13 @@
                 </select>
 
                 <label for="fnd_status" class="mt-3">Status of Item:</label>
-                <textarea class="form-control" name="fnd_status" id="fnd_status" placeholder="Damaged/Good Condition/Others"></textarea>
+                <textarea class="form-control" name="fnd_status" id="fnd_status" placeholder="Damaged/Good Condition/Others. Leave blank if not applicable"></textarea>
 
                 <label for="fnd_image" class="mt-3">Upload Image:</label>
                 <input type="file" class="form-control" id="fnd_image" name="fnd_image" accept="image/*" capture>
 
 
-                <!-- Founder Info -->
+                <!-- FOUNDER INFO -->
                 <div class="container mt-3 mb-5">
                     <h3 class="text-center mt-5">Founder Information</h3>
 
@@ -68,8 +68,6 @@
 
             </div>
 
-
-            
         </form>
 
     </div>

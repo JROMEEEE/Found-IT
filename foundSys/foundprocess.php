@@ -17,7 +17,7 @@ try {
     $sql = "INSERT INTO found_items 
             (fnd_category, fnd_name, fnd_desc, fnd_location, fnd_datetime, fndr_name, fndr_number, fndr_email, fnd_status, fnd_image) 
             VALUES 
-            (:category, :name, :description, :location, :datetime, :reporter_name, :reporter_number, :reporter_email, :status, :image)";
+            (:category, :name, :description, :location, :datetime, :reporter_name, :reporter_number, :reporter_email, 'unclaimed', :image)";
 
     $stmt = $conn->prepare($sql);
 
@@ -30,7 +30,6 @@ try {
     $stmt->bindParam(':reporter_name', $_POST['fndr_name']);
     $stmt->bindParam(':reporter_number', $_POST['fndr_contact']);
     $stmt->bindParam(':reporter_email', $_POST['fndr_email']);
-    $stmt->bindParam(':status', $_POST['fnd_status']);
     $stmt->bindParam(':image', $fnd_image, PDO::PARAM_LOB);
 
     if ($stmt->execute()) {

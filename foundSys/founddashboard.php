@@ -13,6 +13,8 @@
         
     <a href="foundform.php" class="btn btn-primary">Submit Found Item</a>
 
+    <a href="foundlist.php" class="btn btn-primary">Search Found Items</a>
+
     </div>
 
 
